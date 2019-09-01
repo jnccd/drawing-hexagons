@@ -85,7 +85,7 @@ const Hex = Honeycomb.extendHex({
     }
 })
 const Grid = Honeycomb.defineGrid(Hex)
-const grid = Grid.hexagon({
+var grid = Grid.hexagon({
     radius: gridRadius,
     center: [gridRadius, gridRadius],
     onCreate: renderHex
@@ -96,6 +96,12 @@ document.addEventListener('click', ({ offsetX, offsetY }) => {
     const hex = grid.get(hexCoordinates)
     
     if (hex) {
+        draw.clear()
+        grid = Grid.hexagon({
+            radius: gridRadius,
+            center: [gridRadius, gridRadius],
+            onCreate: renderHex
+        })
         hex.highlight(offsetX, offsetY)
     }
 })
