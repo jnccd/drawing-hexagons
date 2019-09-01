@@ -33,7 +33,7 @@ const Hex = Honeycomb.extendHex({
             const coords = Hex(this.x - gridRadius, this.y - gridRadius).cube();
             // bottom
             this.draw
-                .text(`${coords.s}`)
+                .text(`${coords.r}`)
                 .font({
                 size: fontSize,
                 anchor: 'middle',
@@ -43,7 +43,7 @@ const Hex = Honeycomb.extendHex({
             .translate(centerPosition.x, centerPosition.y - fontSize + hexSize / 2)
             // right
             this.draw
-                .text(`${coords.r}`)
+                .text(`${coords.s}`)
                 .font({
                 size: fontSize,
                 anchor: 'middle',
