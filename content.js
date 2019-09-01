@@ -1,7 +1,7 @@
 const draw = SVG(document.body)
 
 // paramters
-const gridRadius = 3
+const gridRadius = 4
 const hexSize = 30;
 const drawCudeCoords = true
 
