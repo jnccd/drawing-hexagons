@@ -10,7 +10,6 @@ var mouseCoords = [-1, -1]
 var mouseHexCoords
 var mouseHexCubeCoords
 var hexSizeToHexWidthMultiplier = 1.732050807568877;
-var samy
 
 // rendering
 function renderHex(hex) {
@@ -46,7 +45,7 @@ const Hex = Honeycomb.extendHex({
                     width = 3
                     color = '#2E2'
                     rigthFontWeight = 'bolder'
-                    rightFontFill = '#0F0'
+                    rightFontFill = color
                 }
                 if (cubeCoords.q == mouseHexCubeCoords.q) {
                     width = 3
